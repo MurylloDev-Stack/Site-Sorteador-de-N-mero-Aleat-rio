@@ -9,6 +9,12 @@ function sortear() {
     for (let i = 0; i < quantidade; i++) {
     numero = obterNumeroAleatorio(de, ate);
 
+    if (de >= ate) {
+        alert('O valor inicial deve ser menor que o valor final.');
+        return;
+        
+    }
+
     while (sorteados.includes(numero)) {
         numero = obterNumeroAleatorio(de, ate);
     }
