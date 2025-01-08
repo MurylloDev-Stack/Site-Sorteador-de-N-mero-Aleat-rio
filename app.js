@@ -14,6 +14,11 @@ function sortear() {
         return;
         
     }
+    if (quantidade > (ate - de + 1)) {
+        alert('A quantidade de números a serem sorteados deve ser menor ou igual ao intervalo de números disponíveis.');
+        return;
+        
+    }
 
     while (sorteados.includes(numero)) {
         numero = obterNumeroAleatorio(de, ate);
